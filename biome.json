@@ -1,0 +1,102 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.0.0/schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!**/.tsimp",
+      "!**/.yarn",
+      "!**/coverage",
+      "!**/dist",
+      "!**/.pnp.cjs",
+      "!**/.pnp.loader.mjs"
+    ]
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              { "type": false, "source": ":NODE:" },
+              { "type": false, "source": ["vitest", "vitest/**", "@vitest/**", "vitest-*"] },
+              { "type": false, "source": "@testing-library/**" },
+              { "type": false, "source": ["react", "react-dom", "react-dom/**", "react-native"] },
+              { "type": false, "source": [":PACKAGE:"] },
+              ":BLANK_LINE:",
+              {
+                "type": false,
+                "source": [
+                  ":PATH:",
+                  "!**/hooks/*",
+                  "!**/use*.js",
+                  "!**/shared/*",
+                  "!**/utils/*",
+                  "!**/__mocks__/*",
+                  "!**/test-utils.js"
+                ]
+              },
+              ":BLANK_LINE:",
+              { "type": false, "source": ["**/hooks/*", "**/use*.js"] },
+              ":BLANK_LINE:",
+              { "type": false, "source": ["**/shared/*", "**/utils/*"] },
+              ":BLANK_LINE:",
+              { "type": false, "source": "**/__mocks__/*" },
+              ":BLANK_LINE:",
+              { "type": false, "source": "**/test-utils.js" },
+              ":BLANK_LINE:",
+              ":NODE:",
+              ":PACKAGE:",
+              ":PATH:"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "formatter": {
+    "lineWidth": 100,
+    "indentStyle": "space"
+  },
+  "linter": {
+    "rules": {
+      "complexity": {
+        "noUselessSwitchCase": "off"
+      },
+      "correctness": {
+        "noUnusedImports": "warn",
+        "noUnusedVariables": {
+          "level": "warn",
+          "options": {
+            "ignoreRestSiblings": true
+          }
+        }
+      },
+      "suspicious": {
+        "noConsole": "warn"
+      }
+    }
+  },
+  "css": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["**/vite.config.ts"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noConsole": "off"
+          }
+        }
+      }
+    }
+  ]
+}
