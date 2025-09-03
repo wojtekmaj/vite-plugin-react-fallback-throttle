@@ -16,6 +16,7 @@ export default function viteReactFallbackThrottlePlugin(throttleMs = 0): {
             '**/react-dom-client.development.js',
             '**/react-dom-profiling.development.js',
             '**/react-dom-client.production.js',
+            '**/react-dom*.js{?*,}',
           ],
         },
       },
