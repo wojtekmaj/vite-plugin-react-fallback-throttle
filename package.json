@@ -60,5 +60,5 @@
     "url": "git+https://github.com/wojtekmaj/vite-plugin-react-fallback-throttle.git"
   },
   "funding": "https://github.com/wojtekmaj/vite-plugin-react-fallback-throttle?sponsor=1",
-  "packageManager": "yarn@4.10.2"
+  "packageManager": "yarn@4.10.3"
 }
