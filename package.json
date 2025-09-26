@@ -39,7 +39,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.2.4",
     "husky": "^9.0.0",
-    "typescript": "^5.5.2",
+    "typescript": "^5.9.2",
     "vite": "^7.1.5",
     "vitest": "^3.2.3"
   },
