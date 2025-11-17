@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-react-fallback-throttle",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Vite plugin for configuring FALLBACK_THROTTLE_MS in React 19",
   "type": "module",
   "sideEffects": false,
