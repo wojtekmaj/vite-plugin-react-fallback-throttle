@@ -1649,7 +1649,7 @@ __metadata:
     vitest: "npm:^4.0.1"
   peerDependencies:
     react-dom: ^19.0.0
-    vite: ">=2.3.0 <8.0.0"
+    vite: ">=2.3.0 <9.0.0"
   languageName: unknown
   linkType: soft
 
