@@ -41,7 +41,7 @@
     "husky": "^9.0.0",
     "typescript": "^7.0.2",
     "vite": "^8.0.16",
-    "vitest": "^4.1.8"
+    "vitest": "^4.1.10"
   },
   "peerDependencies": {
     "react-dom": "^19.0.0",
