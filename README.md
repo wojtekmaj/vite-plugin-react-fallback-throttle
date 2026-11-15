@@ -19,9 +19,7 @@ import { defineConfig } from 'vite';
 import reactFallbackThrottlePlugin from 'vite-plugin-react-fallback-throttle';
 
 export default defineConfig({
-  plugins: [
-    reactFallbackThrottlePlugin(),
-  ],
+  plugins: [reactFallbackThrottlePlugin()],
 });
 ```
 
